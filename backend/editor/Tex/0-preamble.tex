@@ -1,0 +1,119 @@
+% ================================================
+% Chapitre: preamble
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[french]{babel}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\usepackage{subcaption}
+% \usepackage{subfig}		            % 2 figures side by side
+\usepackage{wrapfig}
+
+\usepackage{ebgaramond}		        % Font garamond
+\usepackage[pdftex]{graphicx}		% Insert figure
+
+\usepackage{longtable}              % Longue table
+\usepackage{multicol}
+\usepackage{supertabular}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+\usepackage{siunitx}                % Number and unity
+% \usepackage{sectsty}                % http://ctan.org/pkg/sectsty change the style of any or all of LATEX's sectional headers in the article, book, or report classes. Examples include the addition of rules above or below a section title.
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\LARGE\bfseries\sffamily}
+\titleformat*{\subsection}{\Large\bfseries\sffamily}
+\titleformat*{\subsubsection}{\large\bfseries\sffamily}
+\titleformat*{\paragraph}{\large\bfseries\sffamily}
+\titleformat*{\subparagraph}{\large\bfseries\sffamily}
+
+% \titlespacing*{hcommandi}{hlefti}{hbefore-sepi}{hafter-sepi}[hright-sepi]
+\titlespacing*{\chapter} {0pt}{*0}{0pt}
+\titlespacing*{\section} {0pt}{*0}{0pt}
+\titlespacing*{\subsection} {0pt}{*0}{0pt}
+\titlespacing*{\subsubsection} {0pt}{*0}{0pt}
+\titlespacing*{\paragraph} {0pt}{5pt}{5pt}
+
+% \usepackage{showframe}
+
+\setlength{\voffset}{-1in}			% Marge top
+\setlength{\topmargin}{0.5cm}		% Pas de marge en haut
+\setlength{\headheight}{1.5cm}		% Haut de page
+\setlength{\headsep}{0.5cm}			% Entre le haut de page et le texte
+
+\setlength{\hoffset}{-1in}			% Marge gauche
+\setlength{\marginparsep}{0.2cm}	% Séparation de la marge
+\setlength{\oddsidemargin}{2.0cm}	% Marge gauche sur pages impaires
+\setlength{\evensidemargin}{2.0cm}	% Marge gauche sur pages paires
+\setlength{\marginparwidth}{1.3cm}	% Largeur de note dans la marge (marge gauche)
+
+\setlength{\textwidth}{18.2cm}		% Largeur de la zone de texte (17cm) (1cm = 28.45274pt) (total: 210mm)
+\setlength{\textheight}{25.5cm}		% Hauteur de la zone de texte (25cm) (total: 297mm)
+
+\setlength{\footskip}{1.0cm}        % Bas de page + séparation
+
+
+% ================================================
+% HEADER AND FOOTER
+\usepackage{fancyhdr}       % You can use fancyhdr to facilitate making headers and footers. If you want the first page to have no header or footer---without using any special packages---you can issue \thispagestyle{empty} on the first page.
+% \rhead{{\color{blue}\rule{1cm}{1cm}}}
+
+
+% \pagestyle{fancy}
+% \lhead{\includegraphics[height=1.3cm]{/Users/mnnguyen/Documents/References/PRO.jpg}}
+% %\rhead{{\small $CI.20_47$-PROFOND-DOC-$001$-0\\BIETRY - ZONE4 - SCI TIMBO - NOTE DE CALCULS DE LA FONDATION PROFONDE}}
+% \rhead{{\small $20.74$-PROFOND-DOC-$001$-$0$\\MARCORY-OPERA-NOTE DES PIEUX}}
+% \rfoot{\thepage}
+
+% \cfoot{center of the footer!}
+\cfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ================================================
+% PARAGRAPH
+\renewcommand{\baselinestretch}{1.5}
+
+% ================================================
+% EXTRACT FIGURES
+% \usepackage{pgf,tikz}
+% \usetikzlibrary{external}
+% \tikzexternalize[prefix=figures/]
+
+% https://tex.stackexchange.com/questions/105717/trick-supertabular-into-multicols-in-new-command
+\newcount\n
+\n=0
+\def\tablebody{}
+\makeatletter
+\loop\ifnum\n<100
+        \advance\n by1
+        \protected@edef\tablebody{\tablebody
+                \textbf{\number\n.}& shortText
+                \tabularnewline
+        }
+\repeat
+
+\makeatletter
+\let\mcnewpage=\newpage
+
+\newcommand{\TrickSupertabularIntoMulticols}{%
+  \renewcommand\newpage{%
+    \if@firstcolumn
+      \hrule width\linewidth height0pt
+      \columnbreak
+    \else
+      \mcnewpage
+    \fi
+  }%
+}
+\makeatother
+
+\setlength\parindent{0pt}
+
+% ================================================
+% END PRELOAD FILE
+\endofdump

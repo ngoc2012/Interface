@@ -1,0 +1,9 @@
+{
+    "backend/backend/settings.py": 
+    {
+        "CORS_ORIGIN_WHITELIST": "('http://localhost:3001',)",
+        "ALLOWED_HOSTS": "192.168.56.1"
+    },
+    
+    "usersFolder": "/media/sf_Gcpm/users"
+}

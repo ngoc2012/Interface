@@ -1,0 +1,422 @@
+{
+"chart": {
+    "width": {
+        "value": 1200,
+        "type": "integer",
+        "min": 10,
+        "max": 10000,
+        "unity": "px"
+    },
+    "height": {
+        "value": 800,
+        "type": "integer",
+        "min": 10,
+        "max": 10000,
+        "unity": "px"
+    },
+    "padding": {
+        "top": {
+            "value": 20,
+            "type": "integer",
+            "min": 0,
+            "max": 10000,
+            "unity": "px"
+        },
+        "bottom": {
+            "value": 10,
+            "type": "integer",
+            "min": 0,
+            "max": 10000,
+            "unity": "px"
+        },
+        "left": {
+            "value": 35,
+            "type": "integer",
+            "min": 0,
+            "max": 10000,
+            "unity": "px"
+        },
+        "right": {
+            "value": 15,
+            "type": "integer",
+            "min": 0,
+            "max": 10000,
+            "unity": "px"
+        }
+    },
+    "lineStyle": {
+        "default": {
+            "lineWidth": 1,
+            "strokeStyle": "black"
+        },
+        "armaDispo": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "black"
+        },
+        "barDispo": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 0, 0.5)"
+        },
+        "armaEB": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "blue"
+        },
+        "armaEH": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 1],
+            "lineWidth": 1,
+            "strokeStyle": "green"
+        },
+        "armaEE": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "red"
+        },
+        "armaCARA": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 1, 0.2)"
+        },
+        "armaFOND": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "green"
+        },
+        "armaACC": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "red"
+        },
+        "momentCARA": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 1, 0.2)"
+        },
+        "momentFOND": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "green"
+        },
+        "momentACC": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "dash": [5, 10],
+            "lineWidth": 1,
+            "strokeStyle": "rgba(1, 0, 0, 0.2)"
+        },
+        "momentDecaleCARA": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 1, 0.2)"
+        },
+        "momentDecaleFOND": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "green"
+        },
+        "momentDecaleACC": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(1, 0, 0, 0.2)"
+        },
+        "XGrid": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 0, 0.2)"
+        },
+        "Xmax": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 0, 0.2)"
+        },
+        "YGrid": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 0, 0.2)"
+        },
+        "Ymax": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "lineWidth": 1,
+            "strokeStyle": "rgba(0, 0, 0, 0.2)"
+        }
+    },
+    "textStyle": {
+        "default": {
+            "offsetCenter": {
+                "x": 0,
+                "y": 0
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "black"
+        },
+        "barText": {
+            "render": {
+                "value": false,
+                "type": "boolean"
+            },
+            "offsetCenter": {
+                "x": 0,
+                "y": 7
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "rgba(0, 0, 0, 0.7)"
+        },
+        "XLabel": {
+            "render": {
+                "value": false,
+                "type": "boolean"
+            },
+            "offsetCenter": {
+                "x": 0,
+                "y": 7
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "rgba(0, 0, 0, 0.5)"
+        },
+        "Xmax": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "offsetCenter": {
+                "x": 0,
+                "y": 7
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "rgba(255, 0, 0, 0.5)"
+        },
+        "YLabel": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "offsetCenter": {
+                "x": 10,
+                "y": 7
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "rgba(0, 0, 0, 0.5)"
+        },
+        "Ymax": {
+            "render": {
+                "value": true,
+                "type": "boolean"
+            },
+            "offsetCenter": {
+                "x": 10,
+                "y": 7
+            },
+            "font": "12px Arial",
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "fillStyle": "rgba(0, 0, 0, 0.5)"
+        }
+    }
+},
+"suplots": {
+    "subplot-moment" : {
+        "graph": {
+            "padding": {
+                "top": {
+                    "value": 50,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "bottom": {
+                    "value": 10,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "left": {
+                    "value": 10,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "right": {
+                    "value": 800,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                }
+            }
+        },
+        "data": [
+            "momentMaxEB", "momentMinEB",
+            "momentMaxEH", "momentMinEH",
+            "momentMaxEE", "momentMinEE", 
+            "momentMaxCARA", "momentMinCARA", 
+            "momentMaxFOND", "momentMinFOND", 
+            "momentMaxACC", "momentMinACC",
+            "momentDecaleMaxEB", "momentDecaleMinEB",
+            "momentDecaleMaxEH", "momentDecaleMinEH",
+            "momentDecaleMaxEE", "momentDecaleMinEE", 
+            "momentDecaleMaxCARA", "momentDecaleMinCARA", 
+            "momentDecaleMaxFOND", "momentDecaleMinFOND", 
+            "momentDecaleMaxACC", "momentDecaleMinACC"
+        ],
+        "lines": [],
+        "texts": []
+    },
+    "subplot-arma" : {
+        "graph": {
+            "padding": {
+                "top": {
+                    "value": 50,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "bottom": {
+                    "value": 10,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "left": {
+                    "value": 400,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "right": {
+                    "value": 400,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                }
+            },
+            "Ygrid": 1.0
+        },
+        "data": [
+            "armaFCARA", "armaTCARA", 
+            "armaFFOND", "armaTFOND", 
+            "armaFACC", "armaTACC",
+            "armaFEB", "armaTEB", 
+            "armaFEH", "armaTEH", 
+            "armaFEE", "armaTEE",
+            "armaFDispo", "armaTDispo"
+        ],
+        "lines": ["barDispo", "Amin"],
+        "texts": ["barTextDispo"]
+    },
+    "subplot-pression" : {
+        "graph": {
+            "padding": {
+                "top": {
+                    "value": 50,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "bottom": {
+                    "value": 10,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "left": {
+                    "value": 800,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                },
+                "right": {
+                    "value": 20,
+                    "type": "integer",
+                    "min": 0,
+                    "max": 10000,
+                    "unity": "px"
+                }
+            }
+        },
+        "data": [],
+        "lines": ["barDispo"],
+        "texts": ["barTextDispo"]
+    }
+}
+}

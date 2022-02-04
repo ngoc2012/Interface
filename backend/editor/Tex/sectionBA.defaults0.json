@@ -1,0 +1,17 @@
+{
+    "type": "sectionBA",
+    "charges": [
+        {"etat": ["CARA", "FOND"]}
+    ],
+    "materiaux": {
+		"norme": ["EC", "DTU"],
+		"arma" : {
+			"classe": ["A", "B"],
+			"palier" : ["horizontal", "incliné"]
+		},
+		"beton" : {
+			"diagramme": ["parabole-rectangle", "..."],
+			"classe": ["XA1", "XA2"]
+		}
+	}
+}

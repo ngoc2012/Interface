@@ -1,0 +1,380 @@
+{
+    "hypSols": {
+        "type": "table",
+        "size": "footnotesize",
+        "spec": ["show"],
+        "position": "h!",
+        "caption": "Caractéristiques de sols pris en compte dans le calcul",
+        "label": "hypSols",
+        "list": [
+            "['pieuList'][0].coucheList[i].nom"  ,
+            "['pieuList'][0].coucheList[i].sup"  ,
+            "['pieuList'][0].coucheList[i].inf"  ,
+            "['pieuList'][0].coucheList[i].pl"   ,
+            "['pieuList'][0].coucheList[i].pf"   ,
+            "['pieuList'][0].coucheList[i].Em"   ,
+            "['pieuList'][0].coucheList[i].alpha",
+            "['pieuList'][0].coucheList[i].phi"  ,
+            "['pieuList'][0].coucheList[i].c"    ,
+            "['pieuList'][0].coucheList[i].typeSol"
+        ],
+        "usecols": ["Couche", "Sup", "Inf", "{p^*}_l", "p_f",    "Em",   "\\alpha",  "phi",  "c",    "Type"],
+        "unite":   [   "",      "",   "",    "(MPa)", "(MPa)", "(MPa)",     "",      "",  "(kPa)",     ""  ]
+    },
+    "hypSols1": {
+        "type": "table",
+        "size": "footnotesize",
+        "spec": ["show"],
+        "position": "h!",
+        "caption": "Hypothèses de sols pour le calcul de frottement axial",
+        "label": "hypSols",
+        "list": [
+            "['pieuList'][0].coucheList[i].nom"        ,
+            "['pieuList'][0].coucheList[i].sup"        ,
+            "['pieuList'][0].coucheList[i].typeSol"    ,
+            "['pieuList'][0].coucheList[i].pl"         ,
+            "['pieuList'][0].coucheList[i].kpMax"      ,
+            "['pieuList'][0].coucheList[i].alphaPieuSol"   ,
+            "['pieuList'][0].coucheList[i].fsol"       ,
+            "['pieuList'][0].coucheList[i].qsMax"      ,
+            "['pieuList'][0].coucheList[i].qs"         ,
+            "['pieuList'][0].coucheList[i].gammaRd1['COMP']",
+            "['pieuList'][0].coucheList[i].gammaRd1['TRAC']"
+        ],
+        "usecols": ["Couche", "Sup", "Type", "{p^*}_l", "k_{pmax}",  "\\alpha_{pieu_sol}", "f_{sol}" , "q_{smax}" , "q_{s}" , "\\gamma_{Rd1,c}", "\\gamma_{Rd1,t}"],
+        "unite":   [   "",     "",     " " ,  "(MPa)",     ""    ,           " ",             ""    ,    "(KPa)"  , "(KPa)" ,           "",             ""        ]
+    },
+    "hypSols2": {
+        "type": "table",
+        "size": "footnotesize",
+        "spec": ["show"],
+        "position": "h!",
+        "caption": "Hypothèses de sols pour le calcul de frottement axial",
+        "label": "hypSols",
+        "list": [
+            "['pieuList'][1].coucheList[i].nom",               
+            "['pieuList'][1].coucheList[i].sup",               
+            "['pieuList'][1].coucheList[i].typeSol",           
+            "['pieuList'][1].coucheList[i].pl",                
+            "['pieuList'][1].coucheList[i].kpMax",             
+            "['pieuList'][1].coucheList[i].alphaPieuSol",      
+            "['pieuList'][1].coucheList[i].fsol",              
+            "['pieuList'][1].coucheList[i].qsMax",             
+            "['pieuList'][1].coucheList[i].qs",                
+            "['pieuList'][1].coucheList[i].gammaRd1['COMP']",  
+            "['pieuList'][1].coucheList[i].gammaRd1['TRAC']"
+        ],
+        "usecols": ["Couche", "Sup", "Type", "{p^*}_l", "k_{pmax}",  "\\alpha_{pieu_sol}", "f_{sol}" , "q_{smax}" , "q_{s}" , "\\gamma_{Rd1,c}", "\\gamma_{Rd1,t}"],
+        "unite":   [   "",     "",     " " ,  "(MPa)",     ""    ,           " ",             ""    ,    "(KPa)"  , "(KPa)" ,           "",             ""        ]
+    },
+    "betonPieux": {
+        "type": "table",
+        "size": "footnotesize",
+        "spec": ["show"],
+        "position": "h!",
+        "caption": "Caractéristiques du béton des pieux",
+        "label": "betonPieux",
+        "list": [
+            "['pieuList'][i].nom",                                  
+            "['pieuList'][i].diametre",                             
+            "['pieuList'][i].plateforme",                           
+            "['pieuList'][i].inf",                                  
+            "['pieuList'][i].coef['fckEff']['k1']",                 
+            "['pieuList'][i].coef['fckEff']['k2']",                 
+            "['pieuList'][i].coef['fckEff']['k3']",                 
+            "['pieuList'][i].fck",                                  
+            "['pieuList'][i].fck_eff",                              
+            "['pieuList'][i].sectionP.materiaux.beton.fcd['FOND']"
+        ],
+        "usecols": ["Appui", "\\phi", "Platforme", "Inf", "k_1", "k_2", "k_3", "f_{ck}", "{f^*}_{ck}", "f_{cd}"],
+        "unite": [    " ",    " ",      " ",       " ",   " ",  " ",  " ",  "(MPa)", "(MPa)", "(MPa)"]
+    },
+    "ddc": {
+        "type": "csvtable",
+        "url": "C:/Users/mnnguyen/Documents/Gcpm/users/ngoc2012/Opera/PieuxInd0/ddc1.csv",
+        "size": "tiny",
+        "position": "h!",
+        "caption": "Résumé des descentes de charges données par BET",
+        "label": "solli",
+        "delimiter": ",",
+        "spec": ["multicols"],
+        "usecols": ["Appui", "Etat", "Approche", "Fx",	"N"]
+    },
+    "loiCombi": {
+        "type": "csvtable",
+        "url": "C:/Users/mnnguyen/Documents/Gcpm/users/ngoc2012/Opera/PieuxInd0/loiCombi.csv",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Les coefficients de combinaison",
+        "label": "coefCombi",
+        "delimiter": ",",
+        "spec": [],
+        "usecols": [ "Nom", "Type", "\\gamma_{Max}", "\\gamma_{Min}", "\\psi_0", "\\psi_1", "\\psi_2", "Commentaires"]
+    },
+    "solli1": {
+        "type": "csvtable",
+        "url": "C:/Users/mnnguyen/Documents/Gcpm/users/ngoc2012/Opera/PieuxInd0/solli1.csv",
+        "size": "tiny",
+        "position": "h!",
+        "caption": "Combinaisons retenues",
+        "label": "solli",
+        "delimiter": ",",
+        "spec": ["multicols"],
+        "usecols": ["Appui", "Etat", "Approche", "N"]
+    },
+    "verifBetonPieux": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification du béton des pieux",
+        "label": "verifBetonPieux",
+        "list": [
+            "['pieuList'][i].nom",        
+            "['pieuList'][i].diametre",   
+            "['pieuList'][i].perimetre",  
+            "['pieuList'][i].section",    
+            "['pieuList'][i].plateforme", 
+            "['pieuList'][i].sup",        
+            "['pieuList'][i].inf",        
+            "['pieuList'][i].fck_eff",    
+            "['pieuList'][i].sectionP.out['COMP']['CARA'].fbMoy",
+            "['pieuList'][i].sectionP.out['COMP']['CARA'].fbMax"
+        ],
+        "spec": ["show"],
+        "usecols": ["Appui", "\\phi", "Peri", "Section", "Platforme",  "Sup",  "Inf", "{f^*}_{ck}", "\\sigma_{c,moy}", "\\sigma_{c,max}"],
+        "unite":   [  "",      "",    "(m)",   "(m2)",       " ",       " ",    " ",     "(MPa)",         "(MPa)",          "(MPa)"     ]
+    },
+    "verifCisailPieux": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification au cisaillement des pieux",
+        "label": "verifCisailPieux",
+        "list": [
+            "['pieuList'][i].nom",     
+            "['pieuList'][i].diametre",
+            "['pieuList'][i].section", 
+            "['pieuList'][i].vmin",    
+            "['pieuList'][i].VRdc_min"
+        ],
+        "spec": [],
+        "usecols": ["Appui", "\\phi", "Section", "v_{min}", "V_{Rdc,min}"],
+        "unite": [  " ",      "(m)",    "(m2)",   "(MPa)",      "(kN)"   ]
+    },
+    "calculCapaPieux": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Valeur caractéristique de la charge de fluage",
+        "label": "calculCapaPieux",
+        "spec": ["show"],
+        "list": [
+            "['pieuList'][i].nom",       
+            "['pieuList'][i].diametre",  
+            "['pieuList'][i].supEff",    
+            "['pieuList'][i].inf",       
+            "['pieuList'][i].ple",       
+            "['pieuList'][i].Def",       
+            "['pieuList'][i].B",         
+            "['pieuList'][i].kp",        
+            "['pieuList'][i].Rb",        
+            "['pieuList'][i].Rs['COMP']",
+            "['pieuList'][i].Rs['TRAC']",
+            "['pieuList'][i].Rck",       
+            "['pieuList'][i].Rtk",
+            "['pieuList'][i].gammaRd2",
+            "['pieuList'][i].gammaRd1['COMP']"
+        ],
+        "usecols": ["Appui", "\\phi",    "Sup",    "Inf", "pl_e^*", "D_{ef}",  "B",  "k_p", "R_{b;k}", "R_{s;c;k}", "R_{s;t;k}", "R_{c;cr;k}", "R_{t;cr;k}", "\\gamma_{Rd2}", "\\gamma_{Rd1,c}"],
+        "unite": [  " ",     " ",      "effectif",  "",   "(MPa)",   "(m)",   "(m)",   "",   "(kN)",      "(kN)",      "(kN)",      "(kN)",       "(kN)"   ,        ""      ,         ""       ],
+        "legend": {
+            "QP_c": "smt"
+        }
+    },
+    "effetGroupe": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Effet de groupe",
+        "label": "effetGroupe",
+        "spec": [],
+        "list": [
+            "['pieuList'][i].nom",         
+            "['pieuList'][i].diametre",    
+            "['pieuList'][i].paramCe['n']",
+            "['pieuList'][i].paramCe['m']",
+            "['pieuList'][i].paramCe['d']",
+            "['pieuList'][i].Ce"
+            
+        ],
+        "usecols": ["Appui", "\\phi",  "n", "m", "d",  "C_e"],
+        "unite": [  " ",      " ",     " ", " ", " ",  " "  ]
+    },
+    "arrachementP1": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "object": {
+            "id": 0
+        },
+        "caption": "Vérification à l'arrachement du pieu P1",
+        "label": "arrachementP1",
+        "spec": ["multicols"],
+        "list": [
+            "niveau",
+            "qstCumul",
+            "RtaCumul",
+            "RsTotal"
+        ],
+        "usecols": ["Niveau", "q_{st}", "R_{ta}", "R_{s}"],
+        "unite": [  " ",      "cumule", "cumule", "total"]
+    },
+    "verifCapaPieux": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification de la capacité portante des pieux",
+        "label": "verifCapaPieux",
+        "spec": ["show"],
+        "list": [
+            "['pieuList'][i].nom",
+            "['pieuList'][i].diametre",
+            "['pieuList'][i].Ce",
+            "['pieuList'][i].gammaRd1['COMP']",
+            "['pieuList'][i].val['QP']['COMP']",
+            "['pieuList'][i].val['CARA']['COMP']",
+            "['pieuList'][i].val['FOND']['COMP']",
+            "['pieuList'][i].val['ACC']['COMP']",
+            "['pieuList'][i].val['QP']['TRAC']",
+            "['pieuList'][i].val['CARA']['TRAC']",
+            "['pieuList'][i].val['FOND']['TRAC']",
+            "['pieuList'][i].val['ACC']['TRAC']",
+            "['pieuList'][i].tauxTravail"
+            
+        ],
+        "entete": "& & & & \\multicolumn{4}{c|}{\\textbf{COMPRESSION}} & \\multicolumn{4}{c|}{\\textbf{TRACTION}}  & \\\\ \\cline{5-12}",
+        "usecols": ["Appui", "\\phi", "Ce", "\\gamma_{Rd1,c}",  "QP",  "CAR", "FON", "ACC",  "QP",  "CAR", "FON", "ACC",  "Taux"],
+        "unite": [  " ",       " ",    "" ,       "",          "(kN)", "(kN)","(kN)","(kN)","(kN)", "(kN)","(kN)","(kN)",   " " ]
+    },
+    "raideurPieux":{
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification de la capacité portante des pieux",
+        "label": "verifCapaPieux",
+        "spec": [],
+        "list": [
+            "['pieuList'][i].nom",                       
+            "['pieuList'][i].diametre",                  
+            "['pieuList'][i].output['CARA']['DteteMax']",
+            "['pieuList'][i].output['CARA']['DteteMin']",
+            "['pieuList'][i].output['CARA']['KteteMax']",
+            "['pieuList'][i].output['CARA']['KteteMin']"
+        ],
+        "usecols": ["Appui", "\\phi", "DteteMax",  "DteteMin",  "KteteMax", "KteteMin"],
+        "unite": [  " ",       " ",    "(kN/m)",    "(kN/m)",    "(kN/m)",   "(kN/m)" ],
+        "csv": "C:/Users/mnnguyen/Documents/Gcpm/users/ngoc2012/Opera/PieuxInd0/raideurPieux.csv"
+    },
+    "verifArmaPieux": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification des armatures des pieux",
+        "label": "verifArmaPieux",
+        "list": [
+            "['pieuList'][i].nom",                               
+            "['pieuList'][i].nPieuX",                            
+            "['pieuList'][i].nPieuY",                            
+            "['pieuList'][i].diametre",                          
+            "['pieuList'][i].sectionP.barLong.nBars",            
+            "['pieuList'][i].sectionP.barLong.diametre",         
+            "['pieuList'][i].sectionP.out['COMP']['FOND'].ebMax",
+            "['pieuList'][i].sectionP.out['COMP']['CARA'].faMin",
+            "['pieuList'][i].output['CARA']['nivMVnull']",       
+            "['pieuList'][i].output['FOND']['nivMVnull']"
+        ],
+        "spec": [],
+        "usecols": ["Appui", "n_{p,x}", "n_{p,y}", "\\phi", "n_{bars}" , "HA",  "e_{b,max}",  "\\sigma_{a,min}", "niv_{M=0}", "niv_{M=0}"],
+        "unite": [      " ",    " ",       " ",      " ",      " ",      " ",  "(FOND,\\%o)",  "(CARA,MPa)"   ,   "(CAR)",    "(FON)"]
+    },
+    "charges": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Charges en tête du pieu ",
+        "label": "section",
+        "spec": [],
+        "list": [
+            "['pieuList'][0].chargeList[i].etat",
+            "['pieuList'][0].chargeList[i].Mx",  
+            "['pieuList'][0].chargeList[i].My",  
+            "['pieuList'][0].chargeList[i].Fx",  
+            "['pieuList'][0].chargeList[i].Fy",  
+            "['pieuList'][0].chargeList[i].N"
+        ],
+        "usecols": ["Etat", "Mx", "My", "Fx", "Fy", "N"],
+        "unite":   [" ",   "kNm","kNm","kN", "kN", "kN"]
+    },
+    "solliMax": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Sollicitations maximales dans le pieu",
+        "label": "section",
+        "spec": [],
+        "list": [
+            "['pieuList'][0].solli[i].etat",
+            "['pieuList'][0].solli[i].Mx",  
+            "['pieuList'][0].solli[i].My",  
+            "['pieuList'][0].solli[i].Fx",  
+            "['pieuList'][0].solli[i].Fy",  
+            "['pieuList'][0].solli[i].N"
+        ],
+        "usecols": ["Etat", "Mx", "My", "Fx", "Fy", "N" ],
+        "unite":   [ " ",   "kNm","kNm","kN", "kN", "kN"]
+    },
+    "verifSection": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Vérification la section du pieu",
+        "label": "section",
+        "spec": [],
+        "list": [
+            "['pieuList'][0].solli[i].etat",
+            "['pieuList'][0].solli[i].Mx",
+            "['pieuList'][0].solli[i].My",
+            "['pieuList'][0].solli[i].Fx",
+            "['pieuList'][0].solli[i].Fy",
+            "['pieuList'][0].solli[i].N",
+            "['pieuList'][0].solli[i].output.ebMax",
+            "['pieuList'][0].solli[i].output.faMin"
+        ],
+        "usecols": ["Etat", "Mx", "My", "Fx", "Fy", "N", "e_{b,max}", "f_{a,min}"],
+        "unite":    [" ",   "kNm","kNm","kN", "kN", "kN",  "°/oo",  "MPa"]
+    },
+    "tableauResultats": {
+        "type": "table",
+        "size": "scriptsize",
+        "position": "h!",
+        "caption": "Tableau récapitulatif des pieux",
+        "label": "tableauResultats",
+        "spec": [],
+        "list": [
+            "['pieuList'][i].nom",           
+            "['pieuList'][i].typeFondation", 
+            "['pieuList'][i].nPieux",        
+            "['pieuList'][i].diametre",      
+            "['pieuList'][i].sectionP.barLong.nBars",   
+            "['pieuList'][i].sectionP.barLong.diametre",
+            "['pieuList'][i].plateforme",               
+            "['pieuList'][i].sup",                      
+            "['pieuList'][i].inf",                      
+            "['pieuList'][i].Lcage",                    
+            "['pieuList'][i].Lf",                       
+            "['pieuList'][i].tauxTravail"
+        ],
+        "usecols": ["Appui", "Type", "n_p", "\\phi", "n_{bars}" , "HA", "Plf",  "Sup",  "Inf",   "Lcage",  "Lf",  "Taux"],
+        "unite": [  " ",  "forage",   " ",  " ",      " ",        " ",   " ",    " ",    " ",     "(m)",   "(m)",   " "]
+    }
+}

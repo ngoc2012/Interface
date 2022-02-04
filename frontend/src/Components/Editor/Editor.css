@@ -1,0 +1,40 @@
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  /* top: 0; */
+  left: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* transform: translateX(-100%); */
+}
+
+.sidebarCollapsed {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.content {
+  /* width: 100%; */
+  height: 100%;
+  padding: 1rem;
+  margin-left: 150px;
+  /* transition: all .3s ease-out; */
+  transition: margin-left .5s;
+}
+.contentFull {
+  /* width: 100%; */
+  height: 100%;
+  padding: 1rem;
+  margin-left: 0;
+  transition: all .3s ease-out;
+}

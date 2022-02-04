@@ -1,0 +1,409 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif c++11",
+			"command": "C:\\Strawberry\\c\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-std=c++11",
+				"-I${fileDirname}",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Strawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : C:\\Strawberry\\c\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Strawberry\\c\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Strawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : C:\\Strawberry\\c\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-std=c++11",
+				"-I${fileDirname}",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 object file",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-c",
+				"-std=c++11",
+				"-I${fileDirname}",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.o"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 object big file",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-c",
+				"-std=c++11",
+				"-Wa,-mbig-obj",
+				"-I${fileDirname}",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.o"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 link objects files editor",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\tinyexpr.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\fileF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\stringF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mapF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\jsonF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mathF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\csv.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_writer_ascii.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\charge.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\arma.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\geotech.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\rido.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoArma.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoPanneautage.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoButonnage.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\BAsection.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\pieuPortance.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\editor.o",
+				"-o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\editor.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 link objects files paroiProjet",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\tinyexpr.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\fileF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\stringF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mapF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\jsonF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mathF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\csv.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_writer_ascii.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\charge.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\arma.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\beton.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\geotech.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\rido.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoLierne.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoArma.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoPanneautage.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoDxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\ridoButonnage.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\BAsection.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\pieuPortance.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\paroiProjet.o",
+				"-o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\paroiProjet.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 link objects files projetPieu",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\tinyexpr.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\fileF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\stringF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mapF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\jsonF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mathF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\csv.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\charge.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\geotech.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\pieuPortance.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\pieuProjet.o",
+				"-o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\pieuProjet.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 link objects files projetPieu 1",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\tinyexpr.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\fileF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\stringF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mapF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\jsonF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\mathF.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\csv.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_dxf.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\dxflib\\dl_writer_ascii.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\charge.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\arma.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\geotech.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\BAsection.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\include\\pieuPortance.o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\pieuProjet.o",
+				"-o",
+				"C:\\Users\\mnnguyen\\Documents\\Gcpm\\Interface\\cpprestsdk\\editor\\pieuProjet.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe mingw-w64 link objects files all",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"${fileDirname}\\include\\tinyexpr.o",
+				"${fileDirname}\\include\\fileF.o",
+				"${fileDirname}\\include\\stringF.o",
+				"${fileDirname}\\include\\mapF.o",
+				"${fileDirname}\\include\\mathF.o",
+				"${fileDirname}\\include\\csv.o",
+				"${fileDirname}\\include\\rido.o",
+				"${fileDirname}\\include\\BAparoi.o",
+				"${fileDirname}\\${fileBasenameNoExtension}.o",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe générer le fichier actif",
+			"command": "C:\\Strawberry\\c\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Strawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : C:\\Strawberry\\c\\bin\\gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe C object file",
+			"command": "C:\\Strawberry\\c\\bin\\gcc.exe",
+			"args": [
+				"-c",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.o"
+			],
+			"options": {
+				"cwd": "C:\\Strawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : C:\\Strawberry\\c\\bin\\gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe générer le fichier actif",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		}
+	]
+}
